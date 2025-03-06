@@ -36,16 +36,17 @@ namespace api_filmes_senai.Controllers
         [HttpPost]
         public IActionResult Post(Genero novoGenero)
         {
-            try {	        
-		_generoRepository.Cadastrar(novoGenero);
+            try {
+                _generoRepository.Cadastrar(novoGenero);
                 return Created();
-                }
-	
-	catch (Exception error)
-	{
-                return BadRequest(error.Message);}
+            }
+
+            catch (Exception error)
+            {
+                return BadRequest(error.Message); }
 
         }
+  
 
         [HttpGet("BuscarPorId/{id}")]
         public IActionResult GetById(Guid id){

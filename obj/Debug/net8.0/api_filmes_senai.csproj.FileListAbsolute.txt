@@ -506,3 +506,8 @@ C:\Users\39910759896\Desktop\API-Filmes\obj\Debug\net8.0\api_filmes_senai.genrun
 C:\Users\39910759896\Desktop\API-Filmes\obj\Debug\net8.0\ref\api_filmes_senai.dll
 C:\Users\39910759896\Desktop\API-Filmes\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\39910759896\Desktop\API-Filmes\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\39910759896\Desktop\API-Filmes\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\39910759896\Desktop\API-Filmes\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\39910759896\Desktop\API-Filmes\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\39910759896\Desktop\API-Filmes\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\39910759896\Desktop\API-Filmes\obj\Debug\net8.0\api_filmes_senai.MvcApplicationPartsAssemblyInfo.cs
