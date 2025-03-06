@@ -7,13 +7,13 @@ namespace api_filmes_senai.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Produces("aplication/json")]
+    [Produces("application/json")]
     public class UsuarioController : Controller
     {
         private readonly IUsuarioRepository _usuarioRepository;
         public UsuarioController(IUsuarioRepository usuarioRepository)
         {
-           _usuarioRepository = usuarioRepository;
+            _usuarioRepository = usuarioRepository;
         }
         [HttpPost]
         public IActionResult Post(Usuario usuario)
@@ -30,6 +30,24 @@ namespace api_filmes_senai.Controllers
                 return BadRequest(error.Message);
             }
 
+        }
+             [HttpGet("{id}")]
+        public IActionResult GetById(Guid id)
+        {
+
+            try
+            {
+                Usuario usuarioBuscado = _usuarioRepository.BuscarPorId(id);
+                if(usuarioBuscado != null)
+                { return Ok(usuarioBuscado);
+
+                }
+                return null;
+            }
+            catch (Exception error)
+            {
+                return BadRequest(error.Message);
+            }
         }
     }
 }

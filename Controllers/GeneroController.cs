@@ -1,6 +1,7 @@
 ﻿using api_filmes_senai.Domains;
 using api_filmes_senai.Interfaces;
 using API_Filmes_SENAI.Context;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -31,6 +32,7 @@ namespace api_filmes_senai.Controllers
 
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult Post(Genero novoGenero)
         {
