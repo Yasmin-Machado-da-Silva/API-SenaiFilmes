@@ -1,6 +1,7 @@
 ﻿using api_filmes_senai.Domains;
 using api_filmes_senai.Interfaces;
 using api_filmes_senai.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api_filmes_senai.Controllers
@@ -15,6 +16,8 @@ namespace api_filmes_senai.Controllers
         {
             _usuarioRepository = usuarioRepository;
         }
+
+        [Authorize]
         [HttpPost]
         public IActionResult Post(Usuario usuario)
         {
